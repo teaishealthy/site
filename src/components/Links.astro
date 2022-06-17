@@ -1,0 +1,24 @@
+---
+const currentPage = Astro.canonicalURL.pathname;
+const pages = {
+    "/": "/",
+    "/tools/": "/tools",
+}
+---
+
+<nav>
+    {Object.keys(pages).filter(key => key !== currentPage).map(key => <a href={key}>{pages[key]}</a>)}
+</nav>
+
+<style>
+    nav {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+
+    a {
+        color: lightblue;
+        text-decoration: none;
+    }
+</style>
