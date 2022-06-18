@@ -7,14 +7,11 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "format": "yarn prettier -w src",
-    "prepare": "husky install"
+    "format": "yarn prettier -w src"
   },
   "devDependencies": {
     "astro": "^1.0.0-beta.47",
-    "husky": "^8.0.0",
     "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.1.0-next.5",
-    "pretty-quick": "^3.1.3"
+    "prettier-plugin-astro": "^0.1.0-next.5"
   }
 }
