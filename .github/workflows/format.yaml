@@ -1,12 +1,11 @@
-name: Github Pages Astro CI
-
+name: Format
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
 jobs:
-  deploy:
+  format:
     runs-on: ubuntu-20.04
 
     permissions:
@@ -26,3 +25,5 @@ jobs:
 
       - name: Prettier Action
         uses: creyD/prettier_action@v4.2
+        with:
+          prettier_options: src
