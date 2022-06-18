@@ -23,7 +23,5 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Prettier Action
-        uses: creyD/prettier_action@v4.2
-        with:
-          prettier_options: src
+      - name: Run Prettier
+        run: yarn prettier src --check
