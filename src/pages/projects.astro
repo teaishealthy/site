@@ -7,11 +7,17 @@ import Layout from "../layouts/Layout.astro";
 
   <h2 id="seamless-jukebox">Seamless Jukebox</h2>
   <p class="main-content">
-    <span>WIP</span> A full-stack web application that allows users to play music
+    <span class="wip">WIP</span>A full-stack web application that allows users to play music
     from Spotify without silence inbetween songs.
     <br />
-    <a href="https://github.com/teaishealthy/seamless-jukebox"
-      >https://github.com/teaishealthy/seamless-jukebox
+    <a href="https://github.com/teaishealthy/seamless-jukebox">https://github.com/teaishealthy/seamless-jukebox
+    </a>
+  </p>
+  <h2 id="site">Site</h2>
+  <p class="main-content">
+    <span class="wip">WIP</span>My personal website
+    <br />
+    <a href="https://github.com/teaishealthy/site">https://github.com/teaishealthy/site
     </a>
   </p>
 </Layout>
@@ -21,7 +27,17 @@ import Layout from "../layouts/Layout.astro";
     height: 15rem;
   }
 
+  .wip {
+    font-weight: bold;
+    font-family: monospace;
+  }
+
   span {
     margin-right: 0.2rem;
   }
+
+  p {
+    margin-top: 0;
+  }
+
 </style>
