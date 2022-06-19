@@ -1,11 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon";
 ---
 
 <Layout>
   <h1>Projects</h1>
 
-  <h2 id="seamless-jukebox">Seamless Jukebox</h2>
+  <h2 id="seamless-jukebox">
+    <span>
+      <Icon class="icon" name="simple-icons:javascript" /><Icon
+        class="icon"
+        name="simple-icons:react"
+      /><Icon class="icon" name="simple-icons:cloudflare" />
+    </span>Seamless Jukebox
+  </h2>
   <p class="main-content">
     <span class="wip">WIP</span>A full-stack web application that allows users
     to play music from Spotify without silence inbetween songs.
@@ -14,7 +22,11 @@ import Layout from "../layouts/Layout.astro";
       >https://github.com/teaishealthy/seamless-jukebox
     </a>
   </p>
-  <h2 id="site">Site</h2>
+  <h2 id="site">
+    <span>
+      <Icon class="icon" name="simple-icons:astro" />
+    </span>Site
+  </h2>
   <p class="main-content">
     <span class="wip">WIP</span>My personal website
     <br />
@@ -22,11 +34,40 @@ import Layout from "../layouts/Layout.astro";
       >https://github.com/teaishealthy/site
     </a>
   </p>
+  <h2 id="nextest">
+    <span>
+      <Icon class="icon" name="simple-icons:python" />
+    </span>nextest
+  </h2>
+  <p class="main-content">
+    <span class="wip">WIP</span>A testing framework for nextcord v3 discord bots
+    <br />
+    <a href="https://github.com/teaishealthy/nextest"
+      >https://github.com/teaishealthy/nextest
+    </a>
+  </p>
+  <h2 id="disfake">
+    <span>
+      <Icon class="icon" name="simple-icons:python" />
+    </span>disfake
+  </h2>
+  <p class="main-content">
+    A module to assist in creating valid fake discord objects for testing
+    <br />
+    <a href="https://github.com/teaishealthy/disfake"
+      >https://github.com/teaishealthy/disfake
+    </a>
+  </p>
 </Layout>
 
 <style>
   img {
     height: 15rem;
+  }
+
+  .icon {
+    height: 1rem;
+    margin: 0 0.1rem;
   }
 
   .wip {
