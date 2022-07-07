@@ -1,5 +1,7 @@
 import { defineConfig } from "astro/config";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://teaishealthy.me",
@@ -8,4 +10,5 @@ export default defineConfig({
       external: ["svgo"],
     },
   },
+  integrations: [sitemap()],
 });
