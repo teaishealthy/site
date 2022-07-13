@@ -91,10 +91,10 @@
   resolved "https://registry.yarnpkg.com/@astrojs/prism/-/prism-0.4.1.tgz#c23224f03497e40f6a993fddde08f436e37ffd6c"
   integrity sha512-JxkrXFiFhfunOFBI2Xxwru9t4IzrLw+nfA7RkNnV8qP65BLidrwWS+NfZhOSVGTrbf+cQfF8QNe6O4gAX8wQHw==
 
-"@astrojs/sitemap@^0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-0.2.4.tgz#daf939f214022cad31560d61cf5900d51f391a0b"
-  integrity sha512-seEs/q5MemFY8q14s2WNbDwKWFnvqPz5PxwyofFych5Q1tIYFLUn9w2xj+tAukBRqeUcnrwILFV/kzR7P/Cxxg==
+"@astrojs/sitemap@^0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-0.2.6.tgz#f133976aea7bfba683a161b18ed17c3028560d2e"
+  integrity sha512-OKxVpdK8QbxUd+bTfJnsFNrbX4i/gbNws8MzHKHtF1a52mYho6ssAiFwz5dgTfmwvz41zsNlwDhW3YsUZbaxZw==
   dependencies:
     sitemap "^7.1.1"
     zod "^3.17.3"
