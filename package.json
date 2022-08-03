@@ -11,7 +11,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "astro": "^1.0.0-rc.1",
+    "astro": "^1.0.0-rc.3",
     "astro-icon": "^0.7.3",
     "husky": "^8.0.0",
     "prettier": "^2.7.1",
