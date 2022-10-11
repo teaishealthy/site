@@ -15,10 +15,10 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.23.4.tgz#e22d1436876d0477e62be38063263d2851c57403"
   integrity sha512-vNZIa5Tf5nOqBEGJvM6xyYBnGcz4MAp+bBPnyVI0UYRjsIWlP7RgMdCpRV0OOh5kgh00BoAypGv27kcoJCMVfA==
 
-"@astrojs/compiler@^0.25.0":
-  version "0.25.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.25.2.tgz#ecd59e60bc997c6b80cdf934ad302403a0ee387f"
-  integrity sha512-GE7uLvH7rSHuTHdMun+867TWsgYNYsaGuhvXsywcaabl4W4n/3b1kzgzrIsrXYBo51J0k6qD33mVdsHdvwv5rw==
+"@astrojs/compiler@^0.26.0":
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.26.1.tgz#b57f51c9b099b5fbab4db0bcd51189a16a568ec7"
+  integrity sha512-GoRi4qB05u+bVcSlR9nu9HJfSUGFBcoUUb+WFimKSm9e/KPTy0STOMb/Q0mLIcloavF4KvEqAnd9ukX62ewoaA==
 
 "@astrojs/language-server@^0.26.2":
   version "0.26.2"
@@ -721,12 +721,12 @@ astro-icon@^0.7.3:
     resolve-pkg "^2.0.0"
     svgo "^2.8.0"
 
-astro@^1.4.4:
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-1.4.4.tgz#c64ee6087c0ebf27c24c38a57d2f4f43fd1263f5"
-  integrity sha512-vxuHJ8C/3/NDau6EDUvi83JFDBK5Ylmo6VGAsUkdnutpGw77I4NoapoN56ANmU54ucYiu+x0apEPQvesY6GZiQ==
+astro@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-1.4.6.tgz#8442efca97605caf6d44f036b25f155df2cafdbd"
+  integrity sha512-zGi3uCl+VwBYwbmccyo9M4xI68gx+M7jJdP7kFSR3UCdmDbCoCY6u85ixAAjbkMUSNsuxsrBrhH9HW/X5SGTzQ==
   dependencies:
-    "@astrojs/compiler" "^0.25.0"
+    "@astrojs/compiler" "^0.26.0"
     "@astrojs/language-server" "^0.26.2"
     "@astrojs/markdown-remark" "^1.1.3"
     "@astrojs/telemetry" "^1.0.1"
