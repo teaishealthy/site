@@ -1,0 +1,40 @@
+---
+const { name, id, description, link, isWIP } = Astro.props;
+---
+
+<h2 id={id}>
+  <span>
+    <div class="flex">
+      <slot />
+    </div>
+  </span>{name}
+</h2>
+<p class="main-content">
+  {isWIP && <span class="wip">WIP</span>}{description}
+  <br />
+  <a href={link}>{link}</a>
+</p>
+
+<style>
+  img {
+    height: 15rem;
+  }
+
+  .wip {
+    font-weight: bold;
+    font-family: monospace;
+  }
+
+  span {
+    margin-right: 0.2rem;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .flex {
+    display: inline-flex;
+    gap: 0.5rem;
+  }
+</style>

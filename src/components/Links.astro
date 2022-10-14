@@ -8,9 +8,11 @@ const pages = {
 ---
 
 <nav>
-  {Object.keys(pages)
-    .filter((key) => key !== currentPage)
-    .map((key) => <a href={key}>{pages[key]}</a>)}
+  {
+    Object.keys(pages)
+      .filter((key) => key !== currentPage)
+      .map((key) => <a href={key}>{pages[key]}</a>)
+  }
 </nav>
 
 <style>

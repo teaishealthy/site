@@ -1,110 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
+import Project from "../components/Project.astro";
+import projects from "../projects.json";
 ---
 
 <Layout>
   <h1>Projects</h1>
-
-  <h2 id="seamless-jukebox">
-    <span>
-      <Icon class="icon" name="simple-icons:javascript" /><Icon
-        class="icon"
-        name="simple-icons:react"
-      /><Icon class="icon" name="simple-icons:cloudflare" />
-    </span>Seamless Jukebox
-  </h2>
-  <p class="main-content">
-    <span class="wip">WIP</span>A full-stack web application that allows users
-    to play music from Spotify without silence inbetween songs.
-    <br />
-    <a href="https://github.com/teaishealthy/seamless-jukebox"
-      >https://github.com/teaishealthy/seamless-jukebox
-    </a>
-  </p>
-  <h2 id="tinychat">
-    <span>
-      <Icon class="icon" name="simple-icons:typescript" />
-      <Icon class="icon" name="simple-icons:prisma" />
-    </span>tinychat
-  </h2>
-  <p class="main-content">
-    <span class="wip">WIP</span>A really simple chat platform.
-    <br />
-    <a href="https://github.com/tinychat-app"
-      >https://github.com/tinychat-app
-    </a>
-  </p>
-  <h2 id="site">
-    <span>
-      <Icon class="icon" name="simple-icons:astro" />
-    </span>site
-  </h2>
-  <p class="main-content">
-    My personal website!
-    <br />
-    <a href="https://github.com/teaishealthy/site"
-      >https://github.com/teaishealthy/site
-    </a>
-  </p>
-  <h2 id="nextest">
-    <span>
-      <Icon class="icon" name="simple-icons:python" />
-    </span>nextest
-  </h2>
-  <p class="main-content">
-    <span class="wip">WIP</span>A testing framework for nextcord v3 discord bots
-    <br />
-    <a href="https://github.com/teaishealthy/nextest"
-      >https://github.com/teaishealthy/nextest
-    </a>
-  </p>
-  <h2 id="disfake">
-    <span>
-      <Icon class="icon" name="simple-icons:python" />
-    </span>disfake
-  </h2>
-  <p class="main-content">
-    A module to assist in creating valid fake discord objects for testing
-    <br />
-    <a href="https://github.com/teaishealthy/disfake"
-      >https://github.com/teaishealthy/disfake
-    </a>
-  </p>
-  <h2 id="discord_remote_auth">
-    <span>
-      <Icon class="icon" name="simple-icons:python" />
-    </span>discord_remote_auth
-  </h2>
-  <p class="main-content">
-    A wrapper around discord's remote auth gateway
-    <br />
-    <a href="https://github.com/teaishealthy/discord_remote_auth"
-      >https://github.com/teaishealthy/discord_remote_auth
-    </a>
-  </p>
+  {
+    projects
+      .map((project) => {
+        return {
+          project: project,
+          icons: project.icons.map((icon) => <Icon class="icon" name={icon} />),
+        };
+      })
+      .map((p) => <Project {...p.project}>{p.icons}</Project>)
+  }
 </Layout>
 
 <style>
-  img {
-    height: 15rem;
-  }
-
   .icon {
     height: 1rem;
     margin: 0 0.1rem;
-  }
-
-  .wip {
-    font-weight: bold;
-    font-family: monospace;
-  }
-
-  span {
-    margin-right: 0.2rem;
-  }
-
-  p {
-    margin-top: 0;
   }
 </style>
