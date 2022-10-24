@@ -10,7 +10,7 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@astrojs/compiler@0.27.2":
+"@astrojs/compiler@0.27.2", "@astrojs/compiler@^0.27.1":
   version "0.27.2"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.27.2.tgz#3190cbf84e19abaf227d3f7cde03e72a0af6a966"
   integrity sha512-VG4X87cUkcmT40HqEwShQzUgl0VSnVTszobbmnhAOkHzdoWMxhwAm61A2o5fEsv6eEK8M0lW/fGwkSofYM5GcQ==
@@ -19,11 +19,6 @@
   version "0.23.4"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.23.4.tgz#e22d1436876d0477e62be38063263d2851c57403"
   integrity sha512-vNZIa5Tf5nOqBEGJvM6xyYBnGcz4MAp+bBPnyVI0UYRjsIWlP7RgMdCpRV0OOh5kgh00BoAypGv27kcoJCMVfA==
-
-"@astrojs/compiler@^0.27.1":
-  version "0.27.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-0.27.2.tgz#3190cbf84e19abaf227d3f7cde03e72a0af6a966"
-  integrity sha512-VG4X87cUkcmT40HqEwShQzUgl0VSnVTszobbmnhAOkHzdoWMxhwAm61A2o5fEsv6eEK8M0lW/fGwkSofYM5GcQ==
 
 "@astrojs/language-server@^0.26.2":
   version "0.26.2"
@@ -738,10 +733,10 @@ astro-icon@^0.7.3:
     resolve-pkg "^2.0.0"
     svgo "^2.8.0"
 
-astro@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-1.5.0.tgz#a0235bb14ebb4d388c7ab84bf2f8880362d93495"
-  integrity sha512-xwneXjRT4FChouSe/cj6oJVU6Ux7Fd/7rfnh3mPlB9PTbN5UwnfCI5MjR7rTc93i169Jjh93FndrxmGX45sQBw==
+astro@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-1.5.2.tgz#c4c66855b184e4b5191f988eb67dd2dffb3ac6ad"
+  integrity sha512-ZzPwZYo4GgwNBiOA7xumpkbKNVT/k/ZEvEkAL2lj3NAZHnU801wk9qLlugu8ECoLT4k1j9B/SSmhLr+AhLTazw==
   dependencies:
     "@astrojs/compiler" "^0.27.1"
     "@astrojs/language-server" "^0.26.2"
