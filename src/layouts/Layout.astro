@@ -15,22 +15,72 @@ import Links from "../components/Links.astro";
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <title>teaishealthy</title>
   </head>
+  <script defer>
+    window.onload = () => {
+      let colorMode = localStorage.getItem("color-mode");
 
+      if (!colorMode) {
+        colorMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      }
+      if (!colorMode) {
+        colorMode = "light";
+      }
+      setColormode(colorMode);
+    };
+
+    window.setColormode = (mode) => {
+      localStorage.setItem("color-mode", mode);
+
+      if (mode === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+      document.querySelector("#colormode").innerHTML =
+        mode === "dark" ? "🌚" : "🌞";
+    };
+
+    window.colormode = () => {
+      const currentColorMode = localStorage.getItem("color-mode");
+      const nextColorMode = currentColorMode === "dark" ? "light" : "dark";
+      setColormode(nextColorMode);
+    };
+  </script>
   <body>
     <main>
-      <slot />
       <Links />
+      <div id="colormode" onclick="colormode()">🌞</div>
+      <slot />
     </main>
     <style>
-      :root {
+      :global(:root) {
         --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+        --background-color: white;
+        --text-color: black;
+        --link-color: hsl(196, 82%, 51%);
+      }
+
+      :global(.dark) {
+        --background-color: hsl(0, 2%, 10%);
+        --text-color: white;
+        --link-color: lightblue;
+      }
+
+      #colormode {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 0.5rem;
+        cursor: pointer;
       }
 
       html {
         font-family: system-ui, sans-serif;
         font-size: var(--font-size-base);
-        color: white;
-        background-color: black;
+        color: var(--text-color);
+        background-color: var(--background-color);
       }
 
       body {
@@ -64,10 +114,11 @@ import Links from "../components/Links.astro";
         line-height: 1.5;
         margin-bottom: 2rem;
         font-weight: 300;
+        text-align: justify;
       }
 
       :global(a) {
-        color: lightblue;
+        color: var(--link-color);
         text-decoration: none;
       }
 

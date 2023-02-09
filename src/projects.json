@@ -5,7 +5,7 @@
     "description": "A full-stack web application that allows users to play music from Spotify without silence inbetween songs.",
     "link": "https://github.com/seamless-jukebox/seamless-jukebox",
     "icons": [
-      "simple-icons:javascript",
+      "simple-icons:typescript",
       "simple-icons:react",
       "simple-icons:cloudflare"
     ]
@@ -13,9 +13,13 @@
   {
     "name": "tinychat",
     "isWIP": true,
-    "description": "A really simple chat platform",
-    "link": "https://github.com/tinychat-app",
-    "icons": ["simple-icons:typescript"]
+    "description": "My really simple chat platform :)",
+    "link": "https://github.com/tinychat-app/tinychat",
+    "icons": [
+      "simple-icons:typescript",
+      "simple-icons:react",
+      "simple-icons:express"
+    ]
   },
   {
     "name": "site",
@@ -27,15 +31,22 @@
   {
     "name": "disfake",
     "isWIP": false,
-    "description": "A module to assist in creating valid fake discord objects for testing",
+    "description": "Create valid fake discord objects for testing",
     "link": "https://git.teaishealthy.me/disfake",
     "icons": ["simple-icons:python", "simple-icons:discord"]
   },
   {
     "name": "discord_remote_auth",
     "isWIP": false,
-    "description": "A wrapper around discord's remote auth gateway",
+    "description": "Interact with the Discord Remote Authenication gateway",
     "link": "https://git.teaishealthy.me/discord_remote_auth",
     "icons": ["simple-icons:python", "simple-icons:discord"]
+  },
+  {
+    "name": "comity",
+    "isWIP": false,
+    "description": "A powerful framework for building bots on Discord's Interactions API",
+    "link": "https://git.teaishealthy.me/comity",
+    "icons": ["simple-icons:typescript", "simple-icons:discord"]
   }
 ]

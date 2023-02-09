@@ -1,14 +1,13 @@
 ---
-const { name, id, description, link, isWIP } = Astro.props;
+const { name, description, link, isWIP } = Astro.props;
 ---
 
-<h2 id={id}>
-  <span>
-    <div class="flex">
-      <slot />
-    </div>
-  </span>{name}
-</h2>
+<div class="flex">
+  <h2 id={name.toLowerCase().replace(/ /g, "-")}>
+    {name}
+  </h2>
+  <div class="icons"><slot /></div>
+</div>
 <p class="main-content">
   {isWIP && <span class="wip">WIP</span>}{description}
   <br />
@@ -16,8 +15,26 @@ const { name, id, description, link, isWIP } = Astro.props;
 </p>
 
 <style>
+  h2 {
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    width: max-content;
+  }
   img {
     height: 15rem;
+  }
+
+  div.flex {
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .spacer {
+    display: absolute;
+    width: 1rem;
   }
 
   .wip {
@@ -36,5 +53,9 @@ const { name, id, description, link, isWIP } = Astro.props;
   .flex {
     display: inline-flex;
     gap: 0.5rem;
+  }
+
+  .icons {
+    height: 100%;
   }
 </style>
