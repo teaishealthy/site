@@ -783,10 +783,10 @@ astro-icon@^0.8.0:
     resolve-pkg "^2.0.0"
     svgo "^2.8.0"
 
-astro@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-2.6.1.tgz#ae225e441062765c8a6a03844d08fbd5345754d9"
-  integrity sha512-hQSMhUHMCVhUNa0xZfWnlVfz6MaRnfKtXHEBIA+rq1p3s9Z+rjKQmZq/Dk6G2vH1LMhudTojsBv7uMKumd+OnQ==
+astro@^2.6.4:
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-2.6.4.tgz#37880a65cca438971643fd6473e7fe8ae2578f11"
+  integrity sha512-YM5H9SLHflxCB/3H8S2Bi+1Lbwn/MA9Vl/eOZmkCT491gvBsyuKCTsoUas6fwggeKn+fIR2XpdYd2F+unQve3g==
   dependencies:
     "@astrojs/compiler" "^1.4.0"
     "@astrojs/internal-helpers" "^0.1.0"
@@ -810,7 +810,7 @@ astro@^2.6.1:
     cookie "^0.5.0"
     debug "^4.3.4"
     deepmerge-ts "^4.2.2"
-    devalue "^4.2.0"
+    devalue "^4.3.2"
     diff "^5.1.0"
     es-module-lexer "^1.1.0"
     esbuild "^0.17.18"
@@ -1171,10 +1171,10 @@ dequal@^2.0.0:
   resolved "https://registry.yarnpkg.com/dequal/-/dequal-2.0.3.tgz#2644214f1997d39ed0ee0ece72335490a7ac67be"
   integrity sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==
 
-devalue@^4.2.0:
-  version "4.2.3"
-  resolved "https://registry.yarnpkg.com/devalue/-/devalue-4.2.3.tgz#313bb7e7cf74100bfddab9182b2d1b48ba14701a"
-  integrity sha512-JG6Q248aN0pgFL57e3zqTVeFraBe+5W2ugvv1mLXsJP6YYIYJhRZhAl7QP8haJrqob6X10F9NEkuCvNILZTPeQ==
+devalue@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/devalue/-/devalue-4.3.2.tgz#cc44e4cf3872ac5a78229fbce3b77e57032727b5"
+  integrity sha512-KqFl6pOgOW+Y6wJgu80rHpo2/3H07vr8ntR9rkkFIRETewbf5GaYYcakYfiKz89K+sLsuPkQIZaXDMjUObZwWg==
 
 diff@^5.0.0, diff@^5.1.0:
   version "5.1.0"
