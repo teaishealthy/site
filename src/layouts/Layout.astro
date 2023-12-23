@@ -14,46 +14,6 @@ import Links from "../components/Links.astro";
     />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <title>teaishealthy</title>
-  </head>
-  <script defer>
-    window.onload = () => {
-      let colorMode = localStorage.getItem("color-mode");
-
-      if (!colorMode) {
-        colorMode = window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "light";
-      }
-      if (!colorMode) {
-        colorMode = "light";
-      }
-      setColormode(colorMode);
-    };
-
-    window.setColormode = (mode) => {
-      localStorage.setItem("color-mode", mode);
-
-      if (mode === "dark") {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-      document.querySelector("#colormode").innerHTML =
-        mode === "dark" ? "🌚" : "🌞";
-    };
-
-    window.colormode = () => {
-      const currentColorMode = localStorage.getItem("color-mode");
-      const nextColorMode = currentColorMode === "dark" ? "light" : "dark";
-      setColormode(nextColorMode);
-    };
-  </script>
-  <body>
-    <main>
-      <Links />
-      <div id="colormode" onclick="colormode()">🌞</div>
-      <slot />
-    </main>
     <style>
       :global(:root) {
         --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
@@ -126,5 +86,47 @@ import Links from "../components/Links.astro";
         color: white;
       }
     </style>
+  </head>
+
+  <body>
+    <main>
+      <Links />
+      <div id="colormode" onclick="colormode()">🌞</div>
+      <slot />
+    </main>
   </body>
+
+  <script>
+    import flamethrower from "flamethrower-router";
+    const router = flamethrower({prefetch: "visible", log: true});
+
+    window.setColormode = (mode) => {
+      localStorage.setItem("color-mode", mode);
+
+      if (mode === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+      document.querySelector("#colormode").innerHTML =
+        mode === "dark" ? "🌚" : "🌞";
+    };
+
+    window.colormode = () => {
+      const currentColorMode = localStorage.getItem("color-mode");
+      const nextColorMode = currentColorMode === "dark" ? "light" : "dark";
+      setColormode(nextColorMode);
+    };
+    let colorMode = localStorage.getItem("color-mode");
+
+    if (!colorMode) {
+      colorMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+    }
+    if (!colorMode) {
+      colorMode = "light";
+    }
+    setColormode(colorMode);
+  </script>
 </html>
