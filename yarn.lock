@@ -65,13 +65,14 @@
   dependencies:
     prismjs "^1.28.0"
 
-"@astrojs/sitemap@^2.0.1":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-2.0.2.tgz#a11ecabfae89470abaa5955b8951452f5e6b8261"
-  integrity sha512-dFWtdFwN8kxDiqIxF8T8ODqsUr6hG+EQlFEqm+3oQkhAkucF9QkYLM5Q72mEbYytkL4jvKyHbW1u10T5sWBZew==
+"@astrojs/sitemap@^3.1.4":
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-3.1.4.tgz#9805bd69343572c9da2febd722cbca9797f66f94"
+  integrity sha512-po8CqDCK14O6phU1mB5C8SyVLyQEa+7pJM8oXxs1mVh8DgvxxaA5E7lak1vzOmBcyyyHBW32jakGqNYc66sBRw==
   dependencies:
     sitemap "^7.1.1"
-    zod "^3.17.3"
+    stream-replace-string "^2.0.0"
+    zod "^3.22.4"
 
 "@astrojs/telemetry@^2.1.1":
   version "2.1.1"
@@ -3114,6 +3115,11 @@ stdin-discarder@^0.1.0:
   dependencies:
     bl "^5.0.0"
 
+stream-replace-string@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/stream-replace-string/-/stream-replace-string-2.0.0.tgz#e49fd584bd1c633613e010bc73b9db49cb5024ad"
+  integrity sha512-TlnjJ1C0QrmxRNrON00JvaFFlNh5TTG00APw23j74ET7gkQpTASi6/L2fuiav8pzK715HXtUeClpBTw2NPSn6w==
+
 string-width@^4.1.0:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
@@ -3629,10 +3635,10 @@ yocto-queue@^1.0.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-1.0.0.tgz#7f816433fb2cbc511ec8bf7d263c3b58a1a3c251"
   integrity sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==
 
-zod@^3.17.3, zod@^3.20.6:
-  version "3.22.4"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
-  integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
+zod@^3.20.6, zod@^3.22.4:
+  version "3.23.5"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.5.tgz#c7b7617d017d4a2f21852f533258d26a9a5ae09f"
+  integrity sha512-fkwiq0VIQTksNNA131rDOsVJcns0pfVUjHzLrNBiF/O/Xxb5lQyEXkhZWcJ7npWsYlvs+h0jFWXXy4X46Em1JA==
 
 zwitch@^2.0.0, zwitch@^2.0.4:
   version "2.0.4"
