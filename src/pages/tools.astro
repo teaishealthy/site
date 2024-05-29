@@ -1,144 +1,121 @@
 ---
 import { Icon } from "astro-icon/components";
 import Layout from "../layouts/Layout.astro";
+import Tool from "../components/tool.astro";
 ---
 
 <Layout>
   <h1>Tools I use</h1>
   <p></p>
   <h2>Languages</h2>
-  <a href="https://www.python.org/about/">
-    <span class="tool">
-      <Icon name="simple-icons:python" /><span>Python</span>
-    </span>
-  </a>
-  <a href="https://dart.dev/">
-    <span class="tool">
-      <Icon name="simple-icons:dart" /><span>Dart</span>
-    </span>
-  </a>
-  <a href="https://www.javascript.com/">
-    <span class="tool">
-      <Icon name="simple-icons:javascript" /><span>Javascript</span>
-    </span>
-  </a>
-  <a href="https://wikipedia.org/wiki/HTML">
-    <span class="tool">
-      <Icon name="simple-icons:html5" /><span>HTML</span>
-    </span>
-  </a>
-  <a href="https://wikipedia.org/wiki/css">
-    <span class="tool">
-      <Icon name="simple-icons:css3" /><span>CSS</span>
-    </span>
-  </a>
-  <a href="https://sass-lang.com/">
-    <span class="tool">
-      <Icon name="simple-icons:sass" /><span>Sass</span>
-    </span>
-  </a>
-  <a href="https://wikipedia.org/wiki/Markdown">
-    <span class="tool">
-      <Icon name="simple-icons:markdown" /><span>Markdown</span>
-    </span>
-  </a>
+  <div class="flex flex-row gap-1">
+    <Tool
+      name="Python"
+      icon="simple-icons:python"
+      link="https://www.python.org/about/"
+    />
+    <Tool
+      name="Python"
+      icon="simple-icons:python"
+      link="https://www.python.org/about/"
+    />
+    <Tool name="Dart" icon="simple-icons:dart" link="https://dart.dev/" />
+    <Tool
+      name="Javascript"
+      icon="simple-icons:javascript"
+      link="https://www.javascript.com/"
+    />
+    <Tool
+      name="HTML"
+      icon="simple-icons:html5"
+      link="https://wikipedia.org/wiki/HTML"
+    />
+    <Tool
+      name="CSS"
+      icon="simple-icons:css3"
+      link="https://wikipedia.org/wiki/css"
+    />
+    <Tool name="Sass" icon="simple-icons:sass" link="https://sass-lang.com/" />
+    <Tool
+      name="Markdown"
+      icon="simple-icons:markdown"
+      link="https://wikipedia.org/wiki/Markdown"
+    />
+  </div>
 
-  <p></p>
   <h2>Frameworks</h2>
-  <a href="https://nodejs.org/">
-    <span class="tool">
-      <Icon name="simple-icons:nodedotjs" /><span>Node.js</span>
-    </span>
-  </a>
-  <a href="https://flutter.dev/">
-    <span class="tool">
-      <Icon name="simple-icons:flutter" /><span>Flutter</span>
-    </span>
-  </a>
-  <a href="https://flask.palletsprojects.com/">
-    <span class="tool">
-      <Icon name="simple-icons:flask" /><span>Flask</span>
-    </span>
-  </a>
-  <a href="https://reactjs.org/">
-    <span class="tool">
-      <Icon name="simple-icons:react" /><span>React</span>
-    </span>
-  </a>
-
-  <a href="https://chakra-ui.com/">
-    <span class="tool">
-      <Icon name="simple-icons:chakraui" /><span>Chakra UI</span>
-    </span>
-  </a>
-
-  <a href="https://www.arduino.cc/">
-    <span class="tool">
-      <Icon name="simple-icons:arduino" /><span>Arduino</span>
-    </span>
-  </a>
-
-  <a href="https://www.astro.build/">
-    <span class="tool">
-      <Icon name="simple-icons:astro" /><span>Astro</span>
-    </span>
-  </a>
+  <div class="flex flex-row gap-1">
+    <Tool
+      name="Node"
+      icon="simple-icons:nodedotjs"
+      link="https://nodejs.org/"
+    />
+    <Tool
+      name="Flutter"
+      icon="simple-icons:flutter"
+      link="https://flutter.dev/"
+    />
+    <Tool
+      name="Flask"
+      icon="simple-icons:flask"
+      link="https://flask.palletsprojects.com/"
+    />
+    <Tool name="React" icon="simple-icons:react" link="https://reactjs.org/" />
+    <Tool
+      name="Chakra"
+      icon="simple-icons:chakraui"
+      link="https://chakra-ui.com/"
+    />
+    <Tool
+      name="Arduino"
+      icon="simple-icons:arduino"
+      link="https://www.arduino.cc/"
+    />
+    <Tool
+      name="Astro"
+      icon="simple-icons:astro"
+      link="https://www.astro.build/"
+    />
+  </div>
 
   <p></p>
   <h2>Databases</h2>
 
-  <a href="https://www.mongodb.com/">
-    <span class="tool">
-      <Icon name="simple-icons:mongodb" /><span>MongoDB</span>
-    </span>
-  </a>
-  <a href="https://www.sqlite.org/index.html">
-    <span class="tool">
-      <Icon name="simple-icons:sqlite" /><span>SQLite</span>
-    </span>
-  </a>
+  <div class="flex flex-row gap-1">
+    <Tool
+      name="MongoDB"
+      icon="simple-icons:mongodb"
+      link="https://www.mongodb.com/"
+    />
+    <Tool
+      name="SQLite"
+      icon="simple-icons:sqlite"
+      link="https://www.sqlite.org/index.html"
+    />
+  </div>
 
-  <p></p>
   <h2>Tools</h2>
 
-  <a href="https://code.visualstudio.com/">
-    <span class="tool">
-      <Icon name="simple-icons:visualstudiocode" /><span
-        >Visual Studio Code
-      </span>
-    </span>
-  </a>
-  <a href="https://git-scm.com/">
-    <span class="tool">
-      <Icon name="simple-icons:git" /><span>Git</span>
-    </span>
-  </a>
-
-  <a href="https://www.docker.com/"
-    ><span class="tool">
-      <Icon name="simple-icons:docker" /><span>Docker&nbsp;</span>
-      <!-- Not sure why this is -->
-    </span>
-  </a>
-
-  <a
-    href="https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701"
-    ><span class="tool">
-      <Icon name="simple-icons:windowsterminal" /><span>Windows Terminal</span>
-    </span>
-  </a>
-
-  <a href="https://caddyserver.com/">
-    <span class="tool">
-      <Icon name="file-icons:caddy" /><span>Caddy</span>
-    </span>
-  </a>
-
-  <a href="https://vitejs.dev/">
-    <span class="tool">
-      <Icon name="file-icons:vite" /><span>Vite</span>
-    </span>
-  </a>
+  <div class="flex flex-row gap-1">
+    <Tool
+      name="Visual Studio Code"
+      link="https://code.visualstudio.com/"
+      icon="simple-icons:visualstudiocode"
+    />
+    <Tool name="Git" icon="simple-icons:git" link="https://git-scm.com/" />
+    <Tool
+      name="Docker"
+      icon="simple-icons:docker"
+      link='https://www.docker.com/"'
+    />
+    <Tool
+      name="Windows Terminal"
+      icon="simple-icons:windowsterminal"
+      link='ttps://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701"'
+    />
+    <Tool name="Caddy" icon="file-icons:caddy" link="https// caddyserver.com" />
+    <Tool name="Vite" icon="file-icons:vite" link="https://vitejs.dev/" />
+  </div>
 </Layout>
 
 <style>
@@ -174,5 +151,10 @@ import Layout from "../layouts/Layout.astro";
     opacity: 1;
     z-index: 1;
     background-color: #0e0e0e;
+  }
+
+  h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
 </style>

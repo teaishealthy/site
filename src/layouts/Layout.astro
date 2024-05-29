@@ -28,30 +28,11 @@ import Links from "../components/Links.astro";
         --link-color: lightblue;
       }
 
-      #colormode {
-        position: fixed;
-        top: 0;
-        right: 0;
-        padding: 0.5rem;
-        cursor: pointer;
-      }
-
       html {
         font-family: system-ui, sans-serif;
         font-size: var(--font-size-base);
         color: var(--text-color);
         background-color: var(--background-color);
-      }
-
-      body {
-        height: 100vh;
-        margin: 0;
-      }
-
-      main {
-        margin: auto;
-        padding: 1em;
-        max-width: 60ch;
       }
 
       :global(h1) {
@@ -95,10 +76,16 @@ import Links from "../components/Links.astro";
     </style>
   </head>
 
-  <body>
-    <main>
+  <body class="m-0">
+    <main class="m-auto p-4 max-w-[60ch]">
       <Links />
-      <div id="colormode" onclick="colormode()">🌞</div>
+      <div
+        id="colormode"
+        onclick="colormode()"
+        class="fixed top-0 right-0 p-2 cursor-pointer"
+      >
+        🌞
+      </div>
       <slot />
     </main>
   </body>
