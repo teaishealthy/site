@@ -2,7 +2,7 @@
 import Links from "../components/Links.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -65,8 +65,15 @@ import Links from "../components/Links.astro";
       }
 
       :global(code) {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        font-family:
+          Menlo,
+          Monaco,
+          Lucida Console,
+          Liberation Mono,
+          DejaVu Sans Mono,
+          Bitstream Vera Sans Mono,
+          Courier New,
+          monospace;
       }
 
       :global(.main-content) {
@@ -97,9 +104,6 @@ import Links from "../components/Links.astro";
   </body>
 
   <script>
-    import flamethrower from "flamethrower-router";
-    const router = flamethrower({prefetch: "visible", log: true});
-
     window.setColormode = (mode) => {
       localStorage.setItem("color-mode", mode);
 
