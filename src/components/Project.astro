@@ -2,60 +2,19 @@
 const { name, description, link, isWIP } = Astro.props;
 ---
 
-<div class="flex">
-  <h2 id={name.toLowerCase().replace(/ /g, "-")}>
+<div class="inline-flex gap-2 items-center w-full justify-between">
+  <h2
+    class="m-0 my-6 text-2xl w-max"
+    id={name.toLowerCase().replace(/ /g, "-")}
+  >
     {name}
   </h2>
-  <div class="icons"><slot /></div>
+  <div class="h-full flex"><slot /></div>
 </div>
-<p class="main-content">
-  {isWIP && <span class="wip">WIP</span>}{description}
+<p class="main-content mt-0">
+  {isWIP && <span class="mr-[0.2rem] font-semibold font-mono">WIP</span>}{
+    description
+  }
   <br />
   <a href={link}>{link}</a>
 </p>
-
-<style>
-  h2 {
-    margin: 0;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    width: max-content;
-  }
-  img {
-    height: 15rem;
-  }
-
-  div.flex {
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .spacer {
-    display: absolute;
-    width: 1rem;
-  }
-
-  .wip {
-    font-weight: bold;
-    font-family: monospace;
-  }
-
-  span {
-    margin-right: 0.2rem;
-  }
-
-  p {
-    margin-top: 0;
-  }
-
-  .flex {
-    display: inline-flex;
-    gap: 0.5rem;
-  }
-
-  .icons {
-    height: 100%;
-  }
-</style>
