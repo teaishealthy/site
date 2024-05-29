@@ -1,25 +1,10 @@
 [
   {
-    "name": "Seamless Jukebox",
+    "name": "pyquickshare",
     "isWIP": true,
-    "description": "A full-stack web application that allows users to play music from Spotify without silence inbetween songs.",
-    "link": "https://github.com/seamless-jukebox/seamless-jukebox",
-    "icons": [
-      "simple-icons:typescript",
-      "simple-icons:react",
-      "simple-icons:cloudflare"
-    ]
-  },
-  {
-    "name": "tinychat",
-    "isWIP": true,
-    "description": "My really simple chat platform :)",
-    "link": "https://github.com/tinychat-app/tinychat",
-    "icons": [
-      "simple-icons:typescript",
-      "simple-icons:react",
-      "simple-icons:express"
-    ]
+    "description": "Share files using Android's Quick Share feature",
+    "link": "https://git.teaishealthy.me/pyquickshare",
+    "icons": ["simple-icons:python", "simple-icons:android"]
   },
   {
     "name": "site",
