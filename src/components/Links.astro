@@ -7,18 +7,10 @@ const pages = {
 };
 ---
 
-<nav>
+<nav class="flex justify-aroud mt-4">
   {
     Object.keys(pages)
       .filter((key) => key !== currentPage)
       .map((key) => <a href={key}>{pages[key]}</a>)
   }
 </nav>
-
-<style>
-  nav {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
-  }
-</style>
