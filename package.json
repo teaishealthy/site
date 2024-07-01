@@ -14,7 +14,7 @@
     "@astrojs/sitemap": "^3.1.5",
     "@iconify-json/bi": "^1.1.23",
     "@iconify-json/file-icons": "^1.1.8",
-    "@iconify-json/simple-icons": "^1.1.103",
+    "@iconify-json/simple-icons": "^1.1.108",
     "astro": "^4.9.2",
     "astro-icon": "^1.1.0",
     "husky": "^9.0.11",
