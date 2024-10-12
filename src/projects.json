@@ -4,34 +4,48 @@
     "isWIP": true,
     "description": "Share files using Android's Quick Share feature",
     "link": "https://git.teaishealthy.me/pyquickshare",
-    "icons": ["simple-icons:python", "simple-icons:android"]
+    "icons": [
+      "simple-icons:python",
+      "simple-icons:android"
+    ]
   },
   {
     "name": "site",
     "isWIP": false,
     "description": "My personal webiste! This one!",
     "link": "https://git.teaishealthy.me/site",
-    "icons": ["simple-icons:astro"]
+    "icons": [
+      "simple-icons:astro"
+    ]
   },
   {
     "name": "disfake",
     "isWIP": false,
     "description": "Create valid fake discord objects for testing",
     "link": "https://git.teaishealthy.me/disfake",
-    "icons": ["simple-icons:python", "simple-icons:discord"]
+    "icons": [
+      "simple-icons:python",
+      "simple-icons:discord"
+    ]
   },
   {
     "name": "discord_remote_auth",
     "isWIP": false,
     "description": "Interact with the Discord Remote Authenication gateway",
     "link": "https://git.teaishealthy.me/discord_remote_auth",
-    "icons": ["simple-icons:python", "simple-icons:discord"]
+    "icons": [
+      "simple-icons:python",
+      "simple-icons:discord"
+    ]
   },
   {
     "name": "comity",
-    "isWIP": false,
+    "isWIP": true,
     "description": "A powerful framework for building bots on Discord's Interactions API",
     "link": "https://git.teaishealthy.me/comity",
-    "icons": ["simple-icons:typescript", "simple-icons:discord"]
+    "icons": [
+      "simple-icons:typescript",
+      "simple-icons:discord"
+    ]
   }
 ]
