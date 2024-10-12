@@ -1,29 +1,22 @@
 {
-  "name": "@example/basics",
+  "name": "site-new",
+  "type": "module",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "format": "yarn prettier -w src",
-    "prepare": "husky install"
-  },
-  "devDependencies": {
-    "@astrojs/sitemap": "^3.1.5",
-    "@iconify-json/bi": "^1.1.23",
-    "@iconify-json/file-icons": "^1.1.8",
-    "@iconify-json/simple-icons": "^1.1.103",
-    "astro": "^4.9.2",
-    "astro-icon": "^1.1.0",
-    "husky": "^9.0.11",
-    "prettier": "^3.0.0",
-    "prettier-plugin-astro": "^0.14.0",
-    "pretty-quick": "^4.0.0"
+    "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.1.0",
-    "tailwindcss": "^3.4.3"
-  }
+    "@astrojs/tailwind": "^5.1.2",
+    "@iconify-json/bi": "^1.2.1",
+    "@iconify-json/file-icons": "^1.2.0",
+    "@iconify-json/simple-icons": "^1.2.7",
+    "astro": "^4.16.1",
+    "astro-icon": "^1.1.1",
+    "tailwindcss": "^3.4.13"
+  },
+  "packageManager": "pnpm@9.4.0+sha1.9217c800d4ab947a7aee520242a7b70d64fc7638"
 }
